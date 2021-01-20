@@ -19,7 +19,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtj-lx-6Si" userLabel="ResultView">
                                 <rect key="frame" x="0.0" y="44" width="414" height="272.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dfj-c4-4qz">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dfj-c4-4qz" userLabel="resultLabel">
                                         <rect key="frame" x="20" y="165" width="374" height="107.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="78"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -306,6 +306,28 @@
                             <constraint firstItem="qtj-lx-6Si" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="d0l-co-vVp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ACButton" destination="l9v-Uc-XCV" id="wBw-Ec-Wb7"/>
+                        <outlet property="addbutton" destination="kaP-oZ-I8v" id="EiA-E6-NdG"/>
+                        <outlet property="button0" destination="JHa-d3-5TH" id="hJt-gV-aNp"/>
+                        <outlet property="button1" destination="Ws8-PP-Suq" id="FxD-az-dab"/>
+                        <outlet property="button2" destination="Poc-fh-Ugd" id="eKp-HE-58C"/>
+                        <outlet property="button3" destination="KqC-uo-ek5" id="QID-97-yPB"/>
+                        <outlet property="button4" destination="X9S-2h-0iY" id="wpC-R7-0B7"/>
+                        <outlet property="button5" destination="iQF-HH-MPX" id="qyU-I7-4Yj"/>
+                        <outlet property="button6" destination="w5w-e7-AKh" id="lkf-pa-bGx"/>
+                        <outlet property="button7" destination="wbI-Ee-Aa4" id="tuB-TL-idb"/>
+                        <outlet property="button8" destination="lu8-k3-Xvv" id="agR-fj-cin"/>
+                        <outlet property="button9" destination="Qmd-rB-jPp" id="mmM-7x-5go"/>
+                        <outlet property="buttonDot" destination="STa-w2-f1r" id="JvH-Lt-fcn"/>
+                        <outlet property="divideButton" destination="25M-9e-z8G" id="7tK-R4-ufz"/>
+                        <outlet property="modulatButton" destination="Z9z-Sn-Agl" id="TEe-j6-6YQ"/>
+                        <outlet property="multiplyButton" destination="YYZ-tr-qoT" id="Qmc-hO-hja"/>
+                        <outlet property="posNegButton" destination="qNr-qj-GF1" id="keY-tY-Duo"/>
+                        <outlet property="resultLabel" destination="Dfj-c4-4qz" id="xbP-TM-gga"/>
+                        <outlet property="resultbutton" destination="3aU-oq-q4l" id="Vl8-wK-4k5"/>
+                        <outlet property="subtractButton" destination="g7Y-l4-fDO" id="tqs-QA-52w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
