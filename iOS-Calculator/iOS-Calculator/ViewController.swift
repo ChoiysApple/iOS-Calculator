@@ -39,6 +39,40 @@ class ViewController: UIViewController {
     @IBOutlet weak var button8: UIButton!
     @IBOutlet weak var button9: UIButton!
     
+    // Additional button
+    @IBOutlet weak var openBraceButton: UIButton!
+    @IBOutlet weak var closeBraceButton: UIButton!
+    @IBOutlet weak var mcButton: UIButton!
+    @IBOutlet weak var mPButton: UIButton!
+    @IBOutlet weak var mNButton: UIButton!
+    @IBOutlet weak var mrButton: UIButton!
+    @IBOutlet weak var secondButton: UIButton!
+    @IBOutlet weak var squareButton: UIButton!
+    @IBOutlet weak var thirdPowerButton: UIButton!
+    @IBOutlet weak var yPowerButton: UIButton!
+    @IBOutlet weak var ePowerButton: UIButton!
+    @IBOutlet weak var tenPowerButton: UIButton!
+    @IBOutlet weak var divideByButton: UIButton!
+    @IBOutlet weak var root2Button: UIButton!
+    @IBOutlet weak var root3Button: UIButton!
+    @IBOutlet weak var rootYButton: UIButton!
+    @IBOutlet weak var lnButton: UIButton!
+    @IBOutlet weak var log10Button: UIButton!
+    @IBOutlet weak var pactorialButton: UIButton!
+    @IBOutlet weak var sinButton: UIButton!
+    @IBOutlet weak var cosButton: UIButton!
+    @IBOutlet weak var tanButton: UIButton!
+    @IBOutlet weak var eButton: UIButton!
+    @IBOutlet weak var EEButton: UIButton!
+    @IBOutlet weak var RadButton: UIButton!
+    @IBOutlet weak var sinhButton: UIButton!
+    @IBOutlet weak var coshButton: UIButton!
+    @IBOutlet weak var tanhButton: UIButton!
+    @IBOutlet weak var piButton: UIButton!
+    @IBOutlet weak var RadhButton: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
