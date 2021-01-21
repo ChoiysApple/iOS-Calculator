@@ -295,27 +295,37 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmF-19-2zC">
                                                         <rect key="frame" x="44" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title=")"/>
+                                                        <state key="normal" title=")">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKu-s3-cve">
                                                         <rect key="frame" x="88" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="mc"/>
+                                                        <state key="normal" title="mc">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3h-LF-5WB" userLabel="m+">
                                                         <rect key="frame" x="132" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="m+"/>
+                                                        <state key="normal" title="m+">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEx-Lf-tfh">
                                                         <rect key="frame" x="176" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="m-"/>
+                                                        <state key="normal" title="m-">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgR-PQ-MaK">
                                                         <rect key="frame" x="220" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="mr"/>
+                                                        <state key="normal" title="mr">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -325,32 +335,44 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hC-Eq-Ivb">
                                                         <rect key="frame" x="0.0" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="2ⁿᵈ"/>
+                                                        <state key="normal" title="2ⁿᵈ">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEh-v8-8Wa">
                                                         <rect key="frame" x="44" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="x²"/>
+                                                        <state key="normal" title="x²">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnA-KV-IyU">
                                                         <rect key="frame" x="88" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="x³"/>
+                                                        <state key="normal" title="x³">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwN-cn-OKK">
                                                         <rect key="frame" x="132" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="xʸ"/>
+                                                        <state key="normal" title="xʸ">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00P-Bu-oaB">
                                                         <rect key="frame" x="176" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="eʸ"/>
+                                                        <state key="normal" title="eʸ">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjZ-LA-nPo">
                                                         <rect key="frame" x="220" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="10ˣ"/>
+                                                        <state key="normal" title="10ˣ">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -360,32 +382,44 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9b-F5-4eW">
                                                         <rect key="frame" x="0.0" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="¹/𝗑"/>
+                                                        <state key="normal" title="¹/𝗑">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Aj-mk-ZbI">
                                                         <rect key="frame" x="44" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="²√x"/>
+                                                        <state key="normal" title="²√x">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-ey-Guj">
                                                         <rect key="frame" x="88" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="³√x"/>
+                                                        <state key="normal" title="³√x">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02w-ux-lfN">
                                                         <rect key="frame" x="132" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="ʸ√x"/>
+                                                        <state key="normal" title="ʸ√x">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOw-Ox-LfW">
                                                         <rect key="frame" x="176" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="ln"/>
+                                                        <state key="normal" title="ln">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5vS-Gd-88x">
                                                         <rect key="frame" x="220" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="log₁₀"/>
+                                                        <state key="normal" title="log₁₀">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -395,32 +429,44 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OvZ-sL-2fM">
                                                         <rect key="frame" x="0.0" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="x!"/>
+                                                        <state key="normal" title="x!">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dS-Ed-vPW">
                                                         <rect key="frame" x="44" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="sin"/>
+                                                        <state key="normal" title="sin">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jcb-9T-G9o">
                                                         <rect key="frame" x="88" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="cos"/>
+                                                        <state key="normal" title="cos">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ui6-qq-NdT">
                                                         <rect key="frame" x="132" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="tan"/>
+                                                        <state key="normal" title="tan">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flY-Ja-szr">
                                                         <rect key="frame" x="176" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="e"/>
+                                                        <state key="normal" title="e">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHl-eh-aoy">
                                                         <rect key="frame" x="220" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="EE"/>
+                                                        <state key="normal" title="EE">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -430,32 +476,44 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6c7-Qy-Pte">
                                                         <rect key="frame" x="0.0" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="Rad"/>
+                                                        <state key="normal" title="Rad">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNr-Gi-b1e">
                                                         <rect key="frame" x="44" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="sinh"/>
+                                                        <state key="normal" title="sinh">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J03-kD-AeK">
                                                         <rect key="frame" x="88" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="cosh"/>
+                                                        <state key="normal" title="cosh">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddd-kU-X1n">
                                                         <rect key="frame" x="132" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="tanh"/>
+                                                        <state key="normal" title="tanh">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6S-vv-oGu">
                                                         <rect key="frame" x="176" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="𝜋π"/>
+                                                        <state key="normal" title="𝜋π">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BN-Nr-7nL">
                                                         <rect key="frame" x="220" y="0.0" width="36" height="30"/>
                                                         <color key="backgroundColor" name="AdditionalButtonColor"/>
-                                                        <state key="normal" title="Radh"/>
+                                                        <state key="normal" title="Radh">
+                                                            <color key="titleColor" name="TextColor"/>
+                                                        </state>
                                                     </button>
                                                 </subviews>
                                             </stackView>
