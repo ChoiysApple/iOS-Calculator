@@ -36,7 +36,7 @@
                                                             <color key="titleColor" name="FunctionTextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zkk-lW-SnU"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bz1-YN-6p8"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNr-qj-GF1" userLabel="posNneg">
@@ -50,7 +50,7 @@
                                                             <color key="titleColor" name="FunctionTextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nxd-B0-YXl"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wyc-pz-21r"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9z-Sn-Agl" userLabel="mod">
@@ -64,7 +64,7 @@
                                                             <color key="titleColor" name="FunctionTextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6mU-vl-ohc"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMk-6x-wNP"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25M-9e-z8G" userLabel="div">
@@ -77,9 +77,6 @@
                                                         <state key="normal" title="÷">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
-                                                        <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B4V-4W-UuZ"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -97,7 +94,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHa-WF-Teh"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHa-WF-Teh"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lu8-k3-Xvv" userLabel="8">
@@ -111,7 +108,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfU-ZU-coe"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfU-ZU-coe"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmd-rB-jPp" userLabel="9">
@@ -125,7 +122,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFD-UT-74k"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFD-UT-74k"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYZ-tr-qoT" userLabel="mul">
@@ -138,9 +135,6 @@
                                                         <state key="normal" title="×">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
-                                                        <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vdm-wT-R4Y"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -158,7 +152,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWN-Mh-1CY"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWN-Mh-1CY"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQF-HH-MPX" userLabel="5">
@@ -172,7 +166,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5D-Cy-FqR"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5D-Cy-FqR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5w-e7-AKh" userLabel="6">
@@ -186,7 +180,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uTO-lO-5db"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uTO-lO-5db"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7Y-l4-fDO" userLabel="sub">
@@ -199,9 +193,6 @@
                                                         <state key="normal" title="-">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
-                                                        <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eOs-ng-Fwn"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -219,7 +210,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNf-Ns-uhG"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNf-Ns-uhG"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Poc-fh-Ugd" userLabel="2">
@@ -233,7 +224,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9b3-zb-cKe"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9b3-zb-cKe"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqC-uo-ek5" userLabel="3">
@@ -247,7 +238,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzO-LS-y4B"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzO-LS-y4B"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaP-oZ-I8v" userLabel="add">
@@ -260,9 +251,6 @@
                                                         <state key="normal" title="+">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
-                                                        <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8JP-0h-b91"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -278,7 +266,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1M-FL-UcK"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1M-FL-UcK"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STa-w2-f1r" userLabel="dot">
@@ -292,7 +280,7 @@
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
                                                         <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8s-Xg-Oix"/>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8s-Xg-Oix"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aU-oq-q4l" userLabel="result">
@@ -305,9 +293,6 @@
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
-                                                        <connections>
-                                                            <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NTe-hR-39Z"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

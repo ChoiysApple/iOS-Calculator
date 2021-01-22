@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    
+    var number: String = "0"
     
     override func viewDidAppear(_ animated: Bool) {
         
@@ -58,8 +58,28 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func keyPressed(_ sender: UIButton) {
-        print(sender.currentTitle)
+    @IBAction func numberPressed(_ sender: UIButton) {
+        
+        if let input =  sender.currentTitle {
+            if input == "AC" {
+                number = "0"
+            } else if input == "+/-"{
+                if number[number.startIndex] == "-"{
+                    number.remove(at: number.startIndex)
+                }else {
+                    number = "-"+number
+                }
+            } else if input != "." && number == "0"{
+                number = input
+            } else if input == "%" {
+                let decimal = (number as NSString).floatValue
+                print(decimal)
+                number = String(decimal/100)
+            } else {
+                number += input
+            }
+        }
+        resultLabel.text = number
     }
     
 
