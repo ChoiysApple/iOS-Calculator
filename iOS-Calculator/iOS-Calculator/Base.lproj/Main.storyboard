@@ -16,22 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtj-lx-6Si" userLabel="ResultView">
-                                <rect key="frame" x="0.0" y="44" width="414" height="272.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dfj-c4-4qz" userLabel="resultLabel">
-                                        <rect key="frame" x="20" y="160" width="374" height="112.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="78"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Dfj-c4-4qz" secondAttribute="trailing" constant="20" id="kMF-fx-X9R"/>
-                                    <constraint firstAttribute="bottom" secondItem="Dfj-c4-4qz" secondAttribute="bottom" id="mmL-j2-cba"/>
-                                    <constraint firstItem="Dfj-c4-4qz" firstAttribute="leading" secondItem="qtj-lx-6Si" secondAttribute="leading" constant="20" id="waV-jC-baN"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaT-Pt-ihH" userLabel="ButtonView">
                                 <rect key="frame" x="0.0" y="316.5" width="414" height="545.5"/>
                                 <subviews>
@@ -41,7 +25,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="sms-Zp-9TV" userLabel="Row1">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="82.5"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9v-Uc-XCV" userLabel="AC">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9v-Uc-XCV" userLabel="ac">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                                         <color key="backgroundColor" name="FunctionButtonColor"/>
                                                         <constraints>
@@ -51,6 +35,9 @@
                                                         <state key="normal" title="AC">
                                                             <color key="titleColor" name="FunctionTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bz1-YN-6p8"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNr-qj-GF1" userLabel="posNneg">
                                                         <rect key="frame" x="97.5" y="0.0" width="82" height="82.5"/>
@@ -62,6 +49,9 @@
                                                         <state key="normal" title="+/-">
                                                             <color key="titleColor" name="FunctionTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wyc-pz-21r"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9z-Sn-Agl" userLabel="mod">
                                                         <rect key="frame" x="194.5" y="0.0" width="82.5" height="82.5"/>
@@ -73,6 +63,9 @@
                                                         <state key="normal" title="%">
                                                             <color key="titleColor" name="FunctionTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMk-6x-wNP"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25M-9e-z8G" userLabel="div">
                                                         <rect key="frame" x="292" y="0.0" width="82" height="82.5"/>
@@ -100,6 +93,9 @@
                                                         <state key="normal" title="7">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PHa-WF-Teh"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lu8-k3-Xvv" userLabel="8">
                                                         <rect key="frame" x="97.5" y="0.0" width="82" height="82"/>
@@ -111,6 +107,9 @@
                                                         <state key="normal" title="8">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PfU-ZU-coe"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qmd-rB-jPp" userLabel="9">
                                                         <rect key="frame" x="194.5" y="0.0" width="82.5" height="82"/>
@@ -122,6 +121,9 @@
                                                         <state key="normal" title="9">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFD-UT-74k"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYZ-tr-qoT" userLabel="mul">
                                                         <rect key="frame" x="292" y="0.0" width="82" height="82"/>
@@ -149,6 +151,9 @@
                                                         <state key="normal" title="4">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BWN-Mh-1CY"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQF-HH-MPX" userLabel="5">
                                                         <rect key="frame" x="97.5" y="0.0" width="82" height="82.5"/>
@@ -160,6 +165,9 @@
                                                         <state key="normal" title="5">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u5D-Cy-FqR"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5w-e7-AKh" userLabel="6">
                                                         <rect key="frame" x="194.5" y="0.0" width="82.5" height="82.5"/>
@@ -171,6 +179,9 @@
                                                         <state key="normal" title="6">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uTO-lO-5db"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g7Y-l4-fDO" userLabel="sub">
                                                         <rect key="frame" x="292" y="0.0" width="82" height="82.5"/>
@@ -198,6 +209,9 @@
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GNf-Ns-uhG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Poc-fh-Ugd" userLabel="2">
                                                         <rect key="frame" x="97.5" y="0.0" width="82" height="82"/>
@@ -209,6 +223,9 @@
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9b3-zb-cKe"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqC-uo-ek5" userLabel="3">
                                                         <rect key="frame" x="194.5" y="0.0" width="82.5" height="82"/>
@@ -220,6 +237,9 @@
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzO-LS-y4B"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaP-oZ-I8v" userLabel="add">
                                                         <rect key="frame" x="292" y="0.0" width="82" height="82"/>
@@ -234,20 +254,23 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IA8-Lc-Uu1" userLabel="BottomRow">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="IA8-Lc-Uu1" userLabel="BottomRow">
                                                 <rect key="frame" x="0.0" y="389" width="374" height="82.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHa-d3-5TH" userLabel="0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="82.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="82.5"/>
                                                         <color key="backgroundColor" name="NumberButtonColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                         <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1M-FL-UcK"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STa-w2-f1r" userLabel="dot">
-                                                        <rect key="frame" x="189.5" y="0.0" width="82.5" height="82.5"/>
+                                                        <rect key="frame" x="194.5" y="0.0" width="82.5" height="82.5"/>
                                                         <color key="backgroundColor" name="NumberButtonColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="STa-w2-f1r" secondAttribute="height" multiplier="1:1" id="SoM-tE-aRq"/>
@@ -256,6 +279,9 @@
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g8s-Xg-Oix"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aU-oq-q4l" userLabel="result">
                                                         <rect key="frame" x="292" y="0.0" width="82" height="82.5"/>
@@ -289,6 +315,22 @@
                                     <constraint firstAttribute="trailing" secondItem="UbL-5J-bQC" secondAttribute="trailing" constant="20" id="Di2-hr-VGX"/>
                                     <constraint firstItem="UbL-5J-bQC" firstAttribute="leading" secondItem="TaT-Pt-ihH" secondAttribute="leading" constant="20" id="GRd-AO-4h4"/>
                                     <constraint firstItem="UbL-5J-bQC" firstAttribute="top" secondItem="TaT-Pt-ihH" secondAttribute="top" constant="20" id="Mgn-QV-AVa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtj-lx-6Si" userLabel="ResultView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="272.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dfj-c4-4qz" userLabel="resultLabel">
+                                        <rect key="frame" x="20" y="160" width="374" height="112.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="78"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Dfj-c4-4qz" secondAttribute="trailing" constant="20" id="kMF-fx-X9R"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dfj-c4-4qz" secondAttribute="bottom" id="mmL-j2-cba"/>
+                                    <constraint firstItem="Dfj-c4-4qz" firstAttribute="leading" secondItem="qtj-lx-6Si" secondAttribute="leading" constant="20" id="waV-jC-baN"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -339,13 +381,13 @@
             <color red="0.10999999940395355" green="0.10999999940395355" blue="0.10999999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FunctionButtonColor">
-            <color red="0.6470588235294118" green="0.6470588235294118" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.6470000147819519" green="0.6470000147819519" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="FunctionTextColor">
             <color red="0.10999999940395355" green="0.10999999940395355" blue="0.10999999940395355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="NumberButtonColor">
-            <color red="0.20000000000000001" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20000000298023224" green="0.19599999487400055" blue="0.19599999487400055" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="OperatorButtonColor">
             <color red="1" green="0.58399999141693115" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
