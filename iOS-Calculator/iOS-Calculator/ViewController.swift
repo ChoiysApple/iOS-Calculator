@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DataManagerDelegate {
 
     //MARK:- IBOutlets
     
@@ -42,12 +42,13 @@ class ViewController: UIViewController {
     
     var dataManager = DataManager()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        dataManager.delegate = self
     }
-    
-    var number: String = "0"
-    
+        
     override func viewDidAppear(_ animated: Bool) {
         
         let buttons = [ACButton, posNegButton, modulatButton, divideButton, multiplyButton, subtractButton, addbutton, resultbutton, buttonDot, button1, button2, button3, button4, button5, button6, button7, button8, button9]
@@ -64,9 +65,7 @@ class ViewController: UIViewController {
     
     //MARK:- IBActions
     @IBAction func numberPressed(_ sender: UIButton) {
-        
-        let outputString = dataManager.proccessNumber(button: sender, labelText: resultLabel.text!)
-        resultLabel.text = outputString
+        dataManager.proccessNumber(button: sender, labelText: resultLabel.text!)
     }
     
     @IBAction func operationPressed(_ sender: UIButton) {
@@ -75,5 +74,9 @@ class ViewController: UIViewController {
     
 
 
+    //MARK: DataManagerDelegate stubs
+    func updateView(result: String) {
+        resultLabel.text = result
+    }
 }
 
