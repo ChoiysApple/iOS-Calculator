@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 protocol DataManagerDelegate {
-    func updateView(result: Float)
     func updateView(result: String)
 }
 
@@ -106,7 +105,12 @@ struct DataManager {
         }
         
         Value = result
-        delegate?.updateView(result: result)
+        if result.truncatingRemainder(dividingBy: 1) == 0.0 {
+            delegate?.updateView(result: String(Int(result)))
+        } else {
+            delegate?.updateView(result: String(result))
+        }
+        
         print()
         print("Value: \(Value)")
         
