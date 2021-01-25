@@ -69,7 +69,11 @@ class ViewController: UIViewController, DataManagerDelegate {
     }
     
     @IBAction func operationPressed(_ sender: UIButton) {
-        print(sender.currentTitle)
+        dataManager.processOperator(button: sender)
+    }
+    
+    @IBAction func resultPressed(_ sender: UIButton) {
+        
     }
     
 

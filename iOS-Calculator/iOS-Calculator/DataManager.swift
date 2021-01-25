@@ -15,10 +15,14 @@ protocol DataManagerDelegate {
 
 struct DataManager {
     
+    //MARK:- properties
     var delegate: DataManagerDelegate?
     
     var currentValue: Float = 0.0
+    var currentOperator: String = ""
+    var currentOperand: Float = 0.0
     
+    //MARK:- Methods
     mutating func proccessNumber(button: UIButton, labelText: String){
         
         var currentString = labelText
@@ -52,9 +56,26 @@ struct DataManager {
         }
         print("\(currentString): currentString")
         
-        currentValue = (currentString as NSString).floatValue
+        if currentOperator != "" {
+            currentValue = (currentString as NSString).floatValue
+        } else {
+            currentOperand = (currentString as NSString).floatValue
+        }
+        
         delegate?.updateView(result: currentString)
+        
+        print(currentValue)
     }
+    
+    mutating func processOperator(button: UIButton) {
+        currentOperator = button.currentTitle ?? ""
+        print(currentOperator)
+    }
+    
+    mutating func getResult(){
+        
+    }
+    
     
     
 }
