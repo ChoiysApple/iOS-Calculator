@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 protocol DataManagerDelegate {
+    func updateView(result: Float)
     func updateView(result: String)
 }
 
@@ -105,7 +106,7 @@ struct DataManager {
         }
         
         Value = result
-        delegate?.updateView(result: String(result))
+        delegate?.updateView(result: result)
         print()
         print("Value: \(Value)")
         

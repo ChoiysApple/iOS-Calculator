@@ -84,5 +84,9 @@ class ViewController: UIViewController, DataManagerDelegate {
     func updateView(result: String) {
         resultLabel.text = result
     }
+    
+    func updateView(result: Float) {
+        resultLabel.text = String(result)
+    }
 }
 
