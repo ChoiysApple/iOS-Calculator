@@ -86,7 +86,11 @@ class ViewController: UIViewController, DataManagerDelegate {
     }
     
     func updateView(result: Float) {
-        resultLabel.text = String(result)
+        if result.truncatingRemainder(dividingBy: 1) == 0.0 {
+            resultLabel.text = String(Int(result))
+        } else {
+            resultLabel.text = String(result)
+        }
     }
 }
 
