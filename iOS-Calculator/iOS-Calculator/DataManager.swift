@@ -8,13 +8,18 @@
 import Foundation
 import UIKit
 
+protocol DataManagerDelegate {
+    func updateView(result: String)
+}
 
 
 struct DataManager {
     
-    var currentValue = 0
+    var delegate: DataManagerDelegate?
     
-    mutating func proccessNumber(button: UIButton, labelText: String) -> String{
+    var currentValue: Float = 0.0
+    
+    mutating func proccessNumber(button: UIButton, labelText: String){
         
         var currentString = labelText
         
@@ -38,12 +43,17 @@ struct DataManager {
                 let decimal = (currentString as NSString).floatValue
                 currentString = String(decimal/100)
                 
+            } else if input == "." && currentString.contains(".") {
+                return
+                
             } else {
                 currentString += input
             }
         }
         print("\(currentString): currentString")
-        return currentString
+        
+        currentValue = (currentString as NSString).floatValue
+        delegate?.updateView(result: currentString)
     }
     
     
