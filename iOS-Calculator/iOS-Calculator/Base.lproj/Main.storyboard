@@ -305,6 +305,9 @@
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="resultPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sfv-A7-ZLr"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

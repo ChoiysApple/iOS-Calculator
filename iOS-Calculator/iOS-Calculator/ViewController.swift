@@ -47,6 +47,8 @@ class ViewController: UIViewController, DataManagerDelegate {
         super.viewDidLoad()
         
         dataManager.delegate = self
+        
+        print(dataManager)
     }
         
     override func viewDidAppear(_ animated: Bool) {
@@ -69,7 +71,11 @@ class ViewController: UIViewController, DataManagerDelegate {
     }
     
     @IBAction func operationPressed(_ sender: UIButton) {
-        print(sender.currentTitle)
+        dataManager.processOperator(button: sender)
+    }
+    
+    @IBAction func resultPressed(_ sender: UIButton) {
+        dataManager.getResult()
     }
     
 
@@ -77,6 +83,10 @@ class ViewController: UIViewController, DataManagerDelegate {
     //MARK: DataManagerDelegate stubs
     func updateView(result: String) {
         resultLabel.text = result
+    }
+    
+    func updateView(result: Float) {
+        resultLabel.text = String(result)
     }
 }
 
