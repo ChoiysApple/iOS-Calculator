@@ -77,6 +77,9 @@
                                                         <state key="normal" title="÷">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rI-ge-cJn"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -135,6 +138,9 @@
                                                         <state key="normal" title="×">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clI-rA-RFY"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -193,6 +199,9 @@
                                                         <state key="normal" title="-">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPi-hB-T45"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -251,6 +260,9 @@
                                                         <state key="normal" title="+">
                                                             <color key="titleColor" name="TextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="operationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPq-kq-dDc"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>

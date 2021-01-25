@@ -39,6 +39,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var button8: UIButton!
     @IBOutlet weak var button9: UIButton!
     
+    
+    var dataManager = DataManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -59,28 +62,15 @@ class ViewController: UIViewController {
         }
     }
     
+    //MARK:- IBActions
     @IBAction func numberPressed(_ sender: UIButton) {
         
-        if let input =  sender.currentTitle {
-            if input == "AC" {
-                number = "0"
-            } else if input == "+/-"{
-                if number[number.startIndex] == "-"{
-                    number.remove(at: number.startIndex)
-                }else {
-                    number = "-"+number
-                }
-            } else if input != "." && number == "0"{
-                number = input
-            } else if input == "%" {
-                let decimal = (number as NSString).floatValue
-                print(decimal)
-                number = String(decimal/100)
-            } else {
-                number += input
-            }
-        }
-        resultLabel.text = number
+        let outputString = dataManager.proccessNumber(button: sender, labelText: resultLabel.text!)
+        resultLabel.text = outputString
+    }
+    
+    @IBAction func operationPressed(_ sender: UIButton) {
+        print(sender.currentTitle)
     }
     
 

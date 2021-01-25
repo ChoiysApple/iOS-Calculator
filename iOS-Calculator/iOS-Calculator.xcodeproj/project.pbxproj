@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DA25FAC25BE57C0004BD7F1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA25FAB25BE57C0004BD7F1 /* DataManager.swift */; };
 		7DC07F0F25B80CDF00F8CEAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC07F0E25B80CDF00F8CEAC /* AppDelegate.swift */; };
 		7DC07F1125B80CDF00F8CEAC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC07F1025B80CDF00F8CEAC /* SceneDelegate.swift */; };
 		7DC07F1325B80CDF00F8CEAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC07F1225B80CDF00F8CEAC /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DA25FAB25BE57C0004BD7F1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		7DC07F0B25B80CDF00F8CEAC /* iOS-Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC07F0E25B80CDF00F8CEAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DC07F1025B80CDF00F8CEAC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				7DC07F1725B80CE200F8CEAC /* Assets.xcassets */,
 				7DC07F1925B80CE200F8CEAC /* LaunchScreen.storyboard */,
 				7DC07F1C25B80CE200F8CEAC /* Info.plist */,
+				7DA25FAB25BE57C0004BD7F1 /* DataManager.swift */,
 			);
 			path = "iOS-Calculator";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DC07F1325B80CDF00F8CEAC /* ViewController.swift in Sources */,
+				7DA25FAC25BE57C0004BD7F1 /* DataManager.swift in Sources */,
 				7DC07F0F25B80CDF00F8CEAC /* AppDelegate.swift in Sources */,
 				7DC07F1125B80CDF00F8CEAC /* SceneDelegate.swift in Sources */,
 			);
