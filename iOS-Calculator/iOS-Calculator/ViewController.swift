@@ -47,6 +47,8 @@ class ViewController: UIViewController, DataManagerDelegate {
         super.viewDidLoad()
         
         dataManager.delegate = self
+        
+        print(dataManager)
     }
         
     override func viewDidAppear(_ animated: Bool) {
@@ -73,7 +75,7 @@ class ViewController: UIViewController, DataManagerDelegate {
     }
     
     @IBAction func resultPressed(_ sender: UIButton) {
-        
+        dataManager.getResult()
     }
     
 

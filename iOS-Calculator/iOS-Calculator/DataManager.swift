@@ -18,18 +18,25 @@ struct DataManager {
     //MARK:- properties
     var delegate: DataManagerDelegate?
     
-    var currentValue: Float = 0.0
-    var currentOperator: String = ""
-    var currentOperand: Float = 0.0
+    var Value: Float = 0.0
+    var Operator: String = ""
+    var Operand: Float = 0.0
+    var isOperandTurn: Bool = false
     
     //MARK:- Methods
     mutating func proccessNumber(button: UIButton, labelText: String){
         
         var currentString = labelText
         
+        if isOperandTurn {
+            currentString = "0"
+            isOperandTurn = false
+        }
+        
         if let input =  button.currentTitle {
             if input == "AC" {
                 currentString = "0"
+                Operator = ""
                 
             } else if input == "+/-"{
                 if currentString[currentString.startIndex] == "-"{
@@ -54,25 +61,53 @@ struct DataManager {
                 currentString += input
             }
         }
-        print("\(currentString): currentString")
         
-        if currentOperator != "" {
-            currentValue = (currentString as NSString).floatValue
+        if Operator == "" {
+            Value = (currentString as NSString).floatValue
+            print("Value: \(Value)")
         } else {
-            currentOperand = (currentString as NSString).floatValue
+            Operand = (currentString as NSString).floatValue
+            print("Operand: \(Operand)")
         }
         
         delegate?.updateView(result: currentString)
         
-        print(currentValue)
     }
     
     mutating func processOperator(button: UIButton) {
-        currentOperator = button.currentTitle ?? ""
-        print(currentOperator)
+        Operator = button.currentTitle ?? ""
+        isOperandTurn = true
+        print("Operator: \(Operator)")
     }
     
     mutating func getResult(){
+        var result: Float
+        
+        switch Operator {
+        case "÷":
+            result = Value/Operand
+            break
+            
+        case "×":
+            result = Value*Operand
+            break
+            
+        case "-":
+            result = Value-Operand
+            break
+            
+        case "+":
+            result = Value+Operand
+            break
+            
+        default:
+            return
+        }
+        
+        Value = result
+        delegate?.updateView(result: String(result))
+        print()
+        print("Value: \(Value)")
         
     }
     
