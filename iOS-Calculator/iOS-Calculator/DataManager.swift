@@ -18,9 +18,9 @@ struct DataManager {
     //MARK:- properties
     var delegate: DataManagerDelegate?
     
-    var Value: Float = 0.0
+    var Value: Double = 0.0
     var Operator: String = ""
-    var Operand: Float = 0.0
+    var Operand: Double = 0.0
     var isOperandTurn: Bool = false
     
     //MARK:- Methods
@@ -51,7 +51,7 @@ struct DataManager {
                 currentString = numberGroup.negative+input
                 
             } else if input == numberGroup.percent {
-                let decimal = (currentString as NSString).floatValue
+                let decimal = (currentString as NSString).doubleValue
                 currentString = String(decimal/100)
                 
             } else if input == numberGroup.dot && currentString.contains(numberGroup.dot) {
@@ -63,10 +63,10 @@ struct DataManager {
         }
         
         if Operator == "" {
-            Value = (currentString as NSString).floatValue
+            Value = (currentString as NSString).doubleValue
             print("Value: \(Value)")
         } else {
-            Operand = (currentString as NSString).floatValue
+            Operand = (currentString as NSString).doubleValue
             print("Operand: \(Operand)")
         }
         
@@ -81,7 +81,7 @@ struct DataManager {
     }
     
     mutating func getResult(){
-        var result: Float
+        var result: Double
         
         switch Operator {
         case operatorGroup.divide:
