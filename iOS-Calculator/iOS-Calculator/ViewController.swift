@@ -42,13 +42,14 @@ class ViewController: UIViewController {
     
     var dataManager = DataManager()
     
-    
+    //MARK:- viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dataManager.delegate = self
     }
         
+    //MARK:- make buttons round
     override func viewDidAppear(_ animated: Bool) {
         
         let buttons = [ACButton, posNegButton, modulatButton, divideButton, multiplyButton, subtractButton, addbutton, resultbutton, buttonDot, button1, button2, button3, button4, button5, button6, button7, button8, button9]
@@ -67,8 +68,9 @@ class ViewController: UIViewController {
 
 }
 
+//MARK:- View Actions
 extension ViewController: DataManagerDelegate {
-    //MARK:- IBActions
+    //MARK: IBActions
     @IBAction func numberPressed(_ sender: UIButton) {
         dataManager.proccessNumber(button: sender, labelText: resultLabel.text!)
     }

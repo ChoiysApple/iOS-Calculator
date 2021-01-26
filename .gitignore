@@ -133,3 +133,5 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,swift,xcode
+iOS-Calculator/iOS-Calculator.xcodeproj/project.pbxproj
+*.pbxproj

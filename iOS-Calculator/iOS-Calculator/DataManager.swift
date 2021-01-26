@@ -34,27 +34,27 @@ struct DataManager {
         }
         
         if let input =  button.currentTitle {
-            if input == "AC" {
-                currentString = "0"
+            if input == numberGroup.ac {
+                currentString = numberGroup.zero
                 Operator = ""
                 
-            } else if input == "+/-"{
-                if currentString[currentString.startIndex] == "-"{
+            } else if input == numberGroup.sign{
+                if currentString[currentString.startIndex] == Character(numberGroup.negative) {
                     currentString.remove(at: currentString.startIndex)
                 }else {
-                    currentString = "-"+currentString
+                    currentString = numberGroup.negative + currentString
                 }
                 
-            } else if input != "." && currentString == "0"{
+            } else if input != numberGroup.dot && currentString == numberGroup.zero{
                         currentString = input
-            } else if input != "." && currentString == "-0"{
-                        currentString = "-"+input
+            } else if input != numberGroup.dot && currentString == numberGroup.negative+numberGroup.zero{
+                currentString = numberGroup.negative+input
                 
-            } else if input == "%" {
+            } else if input == numberGroup.percent {
                 let decimal = (currentString as NSString).floatValue
                 currentString = String(decimal/100)
                 
-            } else if input == "." && currentString.contains(".") {
+            } else if input == numberGroup.dot && currentString.contains(numberGroup.dot) {
                 return
                 
             } else {
@@ -84,19 +84,19 @@ struct DataManager {
         var result: Float
         
         switch Operator {
-        case "÷":
+        case operatorGroup.divide:
             result = Value/Operand
             break
             
-        case "×":
+        case operatorGroup.multiply:
             result = Value*Operand
             break
             
-        case "-":
+        case operatorGroup.sub:
             result = Value-Operand
             break
             
-        case "+":
+        case operatorGroup.add:
             result = Value+Operand
             break
             
