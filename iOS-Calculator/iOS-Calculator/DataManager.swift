@@ -21,16 +21,16 @@ struct DataManager {
     var Value: Double = 0.0
     var Operator: String = ""
     var Operand: Double = 0.0
-    var isOperandTurn: Bool = false
+    var isOperandInput: Bool = false
     
     //MARK:- Methods
     mutating func proccessNumber(button: UIButton, labelText: String){
         
         var currentString = labelText
         
-        if isOperandTurn {
+        if isOperandInput {
             currentString = "0"
-            isOperandTurn = false
+            isOperandInput = false
         }
         
         if let input =  button.currentTitle {
@@ -76,7 +76,7 @@ struct DataManager {
     
     mutating func processOperator(button: UIButton) {
         Operator = button.currentTitle ?? ""
-        isOperandTurn = true
+        isOperandInput = true
         print("Operator: \(Operator)")
     }
     
