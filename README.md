@@ -16,3 +16,8 @@ This project is developed using Model(DataManager)-View-Controller(ViewControlle
 <img src="./iOS-Calculator/extension.png" width="80%" alt="dice"></img>
 
 This project used [Extension](https://docs.swift.org/swift-book/LanguageGuide/Extensions.html) for cleaner code. You can check code without extension from [here](https://github.com/ChoiysApple/iOS-Calculator/blob/6c2fc192a209fba09f9e11238b07b167f1a0af2b/iOS-Calculator/iOS-Calculator/ViewController.swift) 
+
+
+## Requirements
+* Deployment Target: 14.3
+* Supporting orientation: Portrait
